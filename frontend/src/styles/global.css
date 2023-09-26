@@ -1,0 +1,165 @@
+:root{
+    --primary-color:#15923D;
+    --primary-color-active:#15923D;
+    --primary-color-hover:rgb(3, 185, 73);
+    --second-color:rgb(173, 185, 3);
+    --text-color-main:#ffffff;
+    --text-color-second:#ffffff;
+    --table-border: #6A6A6A;
+
+    --chart-back-color:rgb(0,0,0,0);
+    --chart-water-color:#A9BFC7;
+    --chart-oil-color:#f39c06;
+    --chart-fluid-color:#91C331;
+
+}
+
+.inputSlider{
+    border-radius: 20px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    border: 0px;
+    text-align: center;
+    background:#d9d9d942;
+    color: var(--text-color-main);
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+.ch{
+    width: 100%;
+    height: 400px;
+    padding-bottom: 50px;
+    /* нужно поаставить хайден для того что бы графики номралньо уменьшались */
+    overflow: hidden;
+}
+h1{
+    font-size: 24px;
+    font-weight: 600;
+}
+h2{
+    font-size: 22px;
+    font-weight: 600;
+}
+h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+h4{
+    font-size: 18px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.header_line{
+    width: 100%;
+    border: none;
+    height: 3px;
+    background-color: rgba(217, 217, 217, 0.26);
+    margin: auto;
+}
+
+.showsettings{
+    /* border-radius: 30px; */
+    /* background:rgba(217, 217, 217, 0.26); */
+    /* min-height: 40px; */
+    text-align: left;
+    /* padding:5px; */
+    border: 0px;
+    width: 60%;
+    background: #42424A;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+    height: 80px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.setting_text{
+    display: flex;
+    flex-direction:column;
+    max-height: 48px;
+    overflow: auto;
+}
+
+.roll-down-enter-active,
+.roll-down-leave-active {
+  transition: all 0.3s ease-out;
+}
+
+.roll-down-enter-from,
+.roll-down-leave-to {
+  transform: translateX(3000px);
+}
+
+body{
+    background: #fafafa;
+    
+}
+
+/* скрываем стрелки на input type number */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+
+    display: none;
+    visibility: hidden;
+    
+}
+
+a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"), url('@/assets/fonts/Montserrat-Regular.ttf') format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"), url('@/assets/fonts/Montserrat-Medium.ttf') format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"), url('@/assets/fonts/Montserrat-SemiBold.ttf') format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"), url('@/assets/fonts/Montserrat-ExtraBold.ttf') format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:#B3B3B3;
+}
